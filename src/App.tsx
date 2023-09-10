@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header } from "./Components/Header/Header";
-import { HomePage } from "./Pages/HomePage/HomePage";
-import { CoinsPage } from "./Pages/CoinsPage/CoinsPage";
+import { Header } from "./components/header";
+import { HomePage } from "./pages/homePage/HomePage";
+import { CoinsPage } from "./pages/coinsPage/CoinsPage";
 import styles from "./App.module.scss";
 
 const App = () => {

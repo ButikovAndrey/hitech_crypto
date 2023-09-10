@@ -25,6 +25,7 @@
         "semi": true
       }
     ],
+    "no-underscore-dangle": "off",
     "react/function-component-definition": [
       2,
       {
