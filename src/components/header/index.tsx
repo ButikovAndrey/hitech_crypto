@@ -40,7 +40,11 @@ export const Header = observer(() => {
             >
               {Object.keys(currencyStore.currencyList).map((symbol) => {
                 const { label } = currencyStore.currencyList[symbol];
-                return <MenuItem value={label}>{label.toUpperCase()}</MenuItem>;
+                return (
+                  <MenuItem key={label} value={label}>
+                    {label.toUpperCase()}
+                  </MenuItem>
+                );
               })}
             </Select>
           </Toolbar>

@@ -5,7 +5,7 @@ export class CurrencyStore {
   private _currencyList: Record<string, currencyDataType> = {
     usd: { label: CURRENCY_LABELS.USD, symbol: "$" },
     eur: { label: CURRENCY_LABELS.EUR, symbol: "€" },
-    gbp: { label: CURRENCY_LABELS.GBP, symbol: "£" },
+    cny: { label: CURRENCY_LABELS.CNY, symbol: "¥" },
   };
 
   private _selectedCurrency: currencyDataType = {

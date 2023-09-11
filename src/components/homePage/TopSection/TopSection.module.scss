@@ -39,5 +39,32 @@
     display: flex;
     align-items: center;
   };
-}
+
+  &__carousel_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: white;
+
+    &__image {
+      padding: 10px;
+    };
+
+    &__price {
+      font-size: 22px;
+      font-weight: 500;
+    };
+
+    &__percent {
+      color: rgb(14, 203, 129);
+      font-weight: 500;
+
+      &_negative {
+        color: red;
+      }
+    }
+  };
+};
 

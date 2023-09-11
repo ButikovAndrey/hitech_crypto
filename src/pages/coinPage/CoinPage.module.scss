@@ -1,0 +1,47 @@
+.coin_page {
+
+  &__loader {
+    background-color: gold;
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__sidebar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+  }
+
+  &__image {
+    height: 200px;
+    margin-bottom: 20px;
+  }
+
+  &__heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    width: 100%;
+    padding: 0 25px 15px;
+    text-align: center;
+    color: lightgray;
+    font-style: italic;
+    overflow: hidden;
+  }
+
+  &__market_data {
+    align-self: start;
+    padding: 10px 25px 25px;
+    width: 100%;
+
+    &__inner {
+      display: flex;
+    }
+  }
+}

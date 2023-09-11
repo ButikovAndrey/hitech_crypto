@@ -17,8 +17,8 @@ function wrapRequestModel<T>(data?: T) {
 }
 
 export default class Api {
-  static get<T>(url: string, config?: AxiosRequestConfig<IResponseModel<T>>) {
-    return ApiBase.get<IResponseModel<T>>(url, config);
+  static get<T>(url: string, config?: AxiosRequestConfig) {
+    return ApiBase.get<T>(url, config);
   }
 
   static post<R, T>(
