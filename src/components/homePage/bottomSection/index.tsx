@@ -94,7 +94,7 @@ export const BottomSection = observer(() => {
                     <TableRow
                       className={styles.bottom_section__row}
                       onClick={() => navigate(`/coins/${row.id}`)}
-                      key={row.price_change_percentage_24h}
+                      key={row.id}
                     >
                       <TableCell
                         className={styles.bottom_section__cell__inner}
