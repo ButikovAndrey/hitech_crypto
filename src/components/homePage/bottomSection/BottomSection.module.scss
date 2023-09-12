@@ -2,6 +2,14 @@
 
 .bottom_section {
 
+  &__no_data {
+    display: block;
+    text-align: center;
+    color: var(--primary-color);
+    opacity: .8;
+    padding: 20px 0;
+  }
+
   &__fit_content{
     width: fit-content;
   }

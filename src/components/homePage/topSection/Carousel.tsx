@@ -21,7 +21,7 @@ export const Carousel = observer(() => {
 
       return (
         <Link
-          key={coinData.id}
+          key={coinData.price_change_percentage_24h}
           className={styles.top_section__carousel_item}
           to={`/coins/${coinData.id}`}
         >
