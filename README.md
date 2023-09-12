@@ -62,9 +62,12 @@ If you closed - just paste in browser url "http://localhost:3000/"
 ### Second part of coin-info page is a price chart, you can chose time interval and/or currency to change it.
 <img width="1428" alt="Screenshot 2023-09-12 at 07 25 13" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/0be28990-ac38-4746-9582-c62a5463fb7e">
 
+### (Note) if you can see bitcoin only, it means that that we received 429 Error from coingecko api (exceeded request limits), need just to wait around 10 minutes
+<img width="1428" alt="Screenshot 2023-09-12 at 17 50 23" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/45f58d97-1cbe-4e19-9c49-ffa4a9ce5837">
 
-### P.S. Please keep in mind that all data reated with price will bee automatically updated in one minute (if you will not update it by yourself).
 
-### P.P.S. Pinned coins stores in localStorage, so, you can loose it if you will open app in new browser (it was a part of the task)
+### P.S. Please keep in mind that all data related with price will bee automatically updated each minute (if you will not update it by yourself).
+
+### P.P.S. Pinned coins stores in localStorage, so you can loose it if you will open app in new browser (it was a part of the task)
 
 Thank you very much :)
