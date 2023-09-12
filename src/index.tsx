@@ -9,9 +9,9 @@ const root = ReactDOM.createRoot(
 );
 
 root.render(
-  // <React.StrictMode>
-  <StoreContext.Provider value={storeInstance}>
-    <App />
-  </StoreContext.Provider>,
-  // </React.StrictMode>,
+  <React.StrictMode>
+    <StoreContext.Provider value={storeInstance}>
+      <App />
+    </StoreContext.Provider>
+  </React.StrictMode>,
 );
