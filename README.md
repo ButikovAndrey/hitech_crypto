@@ -23,23 +23,21 @@
     Ok, great after completion step 1 open project folder via terminal and enter "npm install" into command line to install all depencies.
 	 
     Press Enter and wait, it can takes time.
-	 
-    <img width="1388" alt="Screenshot 2023-09-12 at 06 53 57" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/af464871-7a46-471d-8494-1d03153630f3">
+	 <img width="1400" alt="Screenshot 2023-09-12 at 07 22 12" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/1c91c2f9-5d21-4eae-a714-3ffdc4f742ab">
+
 
 ## 3) Start the project
 
     Now we can run our project. 
 	 
     Enter in terminal "npm start" and wait untill "Compiled successfully!" message.
-	 
-    <img width="1388" alt="Screenshot 2023-09-12 at 06 55 53" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/a2ec0083-1dcd-47f9-9de0-5b0b1db74f0e">
-
+	 <img width="1400" alt="Screenshot 2023-09-12 at 07 22 41" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/49ded294-6a2f-4220-af55-fd3f149b400f">
     
     Browser should open automatycally.
 	 
   If you closed - just paste in browser url "http://localhost:3000/"
+<img width="336" alt="Screenshot 2023-09-12 at 07 23 19" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/132c1432-a8ec-4ac2-8c26-6048211aeacc">
 
-    <img width="1388" alt="Screenshot 2023-09-12 at 06 57 51" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/ebb851ea-368a-4646-8ef3-9b680ddfaaa6">
 
     
 ## 4) Enjoy ☺️ 
