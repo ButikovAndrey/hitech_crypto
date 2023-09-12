@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   AppBar,
   Container,
@@ -15,12 +15,17 @@ import styles from "./Header.module.scss";
 import { CURRENCY_LABELS } from "../../helpers/currency";
 import { setTheme } from "../../helpers/theme";
 import { useStore } from "../../store";
+import { BookmarkPopup } from "./bookmarkPopup";
 
 export const Header = observer(() => {
-  const { currencyStore } = useStore();
+  const { currencyStore, bookmarkStore } = useStore();
   const onCurrencyChange = ({ target }: SelectChangeEvent<CURRENCY_LABELS>) => {
     currencyStore.setCurrency(target.value as CURRENCY_LABELS);
   };
+
+  useEffect(() => {
+    bookmarkStore.initBookmarks();
+  }, []);
 
   return (
     <ThemeProvider theme={setTheme("dark")}>
@@ -32,21 +37,24 @@ export const Header = observer(() => {
                 Hitech Crypto
               </Typography>
             </Link>
-            <Select
-              className={styles.header__select}
-              variant="outlined"
-              defaultValue={currencyStore.selectedCurrency.label}
-              onChange={onCurrencyChange}
-            >
-              {Object.keys(currencyStore.currencyList).map((symbol) => {
-                const { label } = currencyStore.currencyList[symbol];
-                return (
-                  <MenuItem key={label} value={label}>
-                    {label.toUpperCase()}
-                  </MenuItem>
-                );
-              })}
-            </Select>
+            <div className={styles.header__container}>
+              <Select
+                className={styles.header__select_currency}
+                variant="outlined"
+                defaultValue={currencyStore.selectedCurrency.label}
+                onChange={onCurrencyChange}
+              >
+                {Object.keys(currencyStore.currencyList).map((symbol) => {
+                  const { label } = currencyStore.currencyList[symbol];
+                  return (
+                    <MenuItem key={label} value={label}>
+                      {label.toUpperCase()}
+                    </MenuItem>
+                  );
+                })}
+              </Select>
+              <BookmarkPopup />
+            </div>
           </Toolbar>
         </Container>
       </AppBar>

@@ -18,11 +18,12 @@ import { observer } from "mobx-react";
 import { useNavigate } from "react-router-dom";
 import ReactParallaxTilt from "react-parallax-tilt";
 import { setTheme } from "../../../helpers/theme";
-import { tableColumns } from "../../../helpers/table";
+import { tableColumns } from "../../../helpers/tables";
 import { minute, numberWithCommas } from "../../../helpers/coins";
 import styles from "./BottomSection.module.scss";
 import { useStore } from "../../../store";
 import { useDebounce } from "../../../hooks/useDebounce";
+import { Bookmark } from "../../bookmark";
 
 export const BottomSection = observer(() => {
   const { coinsStore, currencyStore } = useStore();
@@ -32,7 +33,6 @@ export const BottomSection = observer(() => {
   const columns = useMemo(() => tableColumns(), []);
 
   const initCoins = async () => {
-    console.log("init coins !!!!");
     await coinsStore.initCoins();
   };
 
@@ -85,9 +85,9 @@ export const BottomSection = observer(() => {
               <TableRow>
                 {columns.map((head) => (
                   <TableCell
-                    className={styles.bottom_section__cell}
                     key={head}
                     align={head === "Coin" ? undefined : "right"}
+                    sx={{ fontSize: "17px", fontWeight: "bold" }}
                   >
                     {head}
                   </TableCell>
@@ -109,7 +109,15 @@ export const BottomSection = observer(() => {
                       component="th"
                       scope="row"
                     >
-                      <ReactParallaxTilt scale={1.01} tiltReverse>
+                      <Bookmark
+                        id={row.id}
+                        className={styles.bottom_section__bookmark}
+                      />
+                      <ReactParallaxTilt
+                        className={styles.bottom_section__fit_content}
+                        scale={1.1}
+                        tiltReverse
+                      >
                         <img
                           className={styles.bottom_section__cell__image}
                           src={row.image}

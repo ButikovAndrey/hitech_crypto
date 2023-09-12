@@ -15,7 +15,7 @@ type HistoryProps = {
 export class CoinsApi {
   static getCoinList(currency: CURRENCY_LABELS) {
     return Api.get<CoinsListItemType[]>(
-      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&per_page=10&page=1&sparkline=false`,
+      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&order=market_cap_desc&per_page=25&page=1&sparkline=false`,
     );
   }
 

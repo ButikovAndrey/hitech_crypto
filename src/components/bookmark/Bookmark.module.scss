@@ -1,0 +1,15 @@
+@import '/css/variables';
+
+.bookmark {
+
+  &__symbol {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+    z-index: 100;
+    padding: 10px;
+    color: gold;
+    cursor: pointer;
+    transition: .5s;
+  }
+}

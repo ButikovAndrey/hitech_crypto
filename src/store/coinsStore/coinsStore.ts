@@ -5,7 +5,6 @@ import {
   CoinsSingleData,
   CoinsListItemType,
   initialCoin,
-  CoinsHistoryData,
 } from "../../helpers/coins";
 
 export class CoinsStore {
@@ -16,10 +15,6 @@ export class CoinsStore {
   private _filteredCoinsList: CoinsListItemType[] = [initialCoin];
 
   private _coinInfo: CoinsSingleData = {} as CoinsSingleData;
-
-  private _chartPrices: Pick<CoinsHistoryData, "prices"> = { prices: [] };
-
-  private _timePeriod = 24;
 
   private _isLoading = false;
 
@@ -50,22 +45,6 @@ export class CoinsStore {
 
   set filteredCoinsList(value) {
     this._filteredCoinsList = value;
-  }
-
-  get chartPrices() {
-    return this._chartPrices;
-  }
-
-  set chartPrices(value) {
-    this._chartPrices = value;
-  }
-
-  get timePeriod() {
-    return this._timePeriod;
-  }
-
-  set timePeriod(value) {
-    this._timePeriod = value;
   }
 
   get isLoading() {
@@ -99,28 +78,9 @@ export class CoinsStore {
         id,
         this.rootStore.currencyStore.selectedCurrency.label,
       );
-      console.log("data", data);
       runInAction(() => {
         this.coinInfo = data;
       });
-    } catch (err) {
-      console.error(err);
-    } finally {
-      this.isLoading = false;
-    }
-  }
-
-  async getHistoricalChart(id: string) {
-    try {
-      this.isLoading = true;
-      const options = {
-        id,
-        currency: this.rootStore.currencyStore.selectedCurrency.label,
-        days: this.timePeriod,
-      };
-      const { data } = await CoinsApi.getHistoricalChart(options);
-      console.log("getHistoricalChart", data);
-      // this.chartPrices = data;
     } catch (err) {
       console.error(err);
     } finally {

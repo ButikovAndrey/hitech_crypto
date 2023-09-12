@@ -1,0 +1,22 @@
+.footer {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    width: 100%;
+    color: gray;
+  }
+
+  &__left {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+  }
+
+  &__right {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+  }
+}

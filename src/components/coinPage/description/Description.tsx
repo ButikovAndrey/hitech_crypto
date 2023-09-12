@@ -1,59 +1,41 @@
-import React, { useMemo } from "react";
+import React from "react";
 import ReactParallaxTilt from "react-parallax-tilt";
 import { Container, Typography } from "@mui/material";
-import styles from "./CoinPage.module.scss";
-import { numberWithCommas } from "../../helpers/coins";
-import { useStore } from "../../store";
+import styles from "./Description.module.scss";
+import { numberWithCommas } from "../../../helpers/coins";
+import { useStore } from "../../../store";
+import { Bookmark } from "../../bookmark";
 
 export const Description = () => {
   const { coinsStore, currencyStore } = useStore();
 
-  const [responsiveSidebar, responsiveMarketData, responsiveDescription] =
-    useMemo(
-      () => [
-        {
-          display: { md: "flex" },
-          width: { md: "35%" },
-          borderRight: { md: "2px solid grey" },
-        },
-        {
-          display: { md: "flex" },
-          justifyContent: { md: "space-around" },
-          flexDirection: { sm: "column" },
-          alignItems: { sm: "center", sx: "start" },
-        },
-        {
-          width: { md: "100%", sm: "50%", xs: "80%" },
-        },
-      ],
-      [],
-    );
-  if (!coinsStore.coinInfo.name) {
+  if (!coinsStore.coinInfo.id) {
     return null;
   }
   return (
-    <Container sx={responsiveSidebar} className={styles.coin_page__sidebar}>
-      <ReactParallaxTilt scale={1.05} tiltReverse>
+    <Container className={styles.coin_page__sidebar}>
+      <ReactParallaxTilt
+        className={styles.coin_page__fit_content}
+        scale={1.05}
+        tiltReverse
+      >
         <img
+          className={styles.coin_page__image}
           src={coinsStore.coinInfo.image.large}
           alt={coinsStore.coinInfo.name}
-          className={styles.coin_page__image}
         />
       </ReactParallaxTilt>
       <Typography variant="h3" className={styles.coin_page__heading}>
         {coinsStore.coinInfo.name}
+        <Bookmark
+          id={coinsStore.coinInfo.id}
+          className={styles.coin_page__bookmark}
+        />
       </Typography>
-      <Typography
-        variant="subtitle1"
-        sx={responsiveDescription}
-        className={styles.coin_page__description}
-      >
+      <Typography variant="subtitle1" className={styles.coin_page__description}>
         {coinsStore.coinInfo.description.en.split(". ")[0]}
       </Typography>
-      <Container
-        className={styles.coin_page__market_data}
-        sx={responsiveMarketData}
-      >
+      <Container className={styles.coin_page__market_data}>
         <span className={styles.coin_page__market_data__inner}>
           <Typography variant="h5" className={styles.coin_page__heading}>
             Rank:
