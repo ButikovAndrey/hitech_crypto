@@ -23,7 +23,7 @@
     Ok, great after completion step 1 open project folder via terminal and enter "npm install" into command line to install all depencies.
 	 
     Press Enter and wait, it can takes time.
-	 <img width="1400" alt="Screenshot 2023-09-12 at 07 22 12" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/1c91c2f9-5d21-4eae-a714-3ffdc4f742ab">
+<img width="1400" alt="Screenshot 2023-09-12 at 07 22 12" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/1c91c2f9-5d21-4eae-a714-3ffdc4f742ab">
 
 
 ## 3) Start the project
@@ -31,7 +31,7 @@
     Now we can run our project. 
 	 
     Enter in terminal "npm start" and wait untill "Compiled successfully!" message.
-	 <img width="1400" alt="Screenshot 2023-09-12 at 07 22 41" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/49ded294-6a2f-4220-af55-fd3f149b400f">
+<img width="1400" alt="Screenshot 2023-09-12 at 07 22 41" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/49ded294-6a2f-4220-af55-fd3f149b400f">
     
     Browser should open automatycally.
 	 
