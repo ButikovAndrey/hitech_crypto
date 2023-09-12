@@ -61,7 +61,7 @@
 <img width="1400" alt="Screenshot 2023-09-12 at 07 09 54" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/a429399b-0e30-4fbd-ad74-658ff4f7d107">
 
 ### Second part of coin-info page is a price chart, you can chose time interval and/or currency to change it.
-<img width="1400" alt="Screenshot 2023-09-12 at 07 11 53" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/2c253a03-63c8-4b97-8224-80f3d4b53ee8">
+<img width="1428" alt="Screenshot 2023-09-12 at 07 25 13" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/0be28990-ac38-4746-9582-c62a5463fb7e">
 
 
 ### P.S. Please keep in mind that all data reated with price will bee automatically updated in one minute (if you will not update it by yourself).
