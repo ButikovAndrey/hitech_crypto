@@ -1,4 +1,4 @@
-<img width="1388" alt="Screenshot 2023-09-12 at 07 09 10" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/dc7fe86d-45f0-4e4f-bf25-bbc50a50f9a0"># Good day, let's get start with the project
+# Good day, let's get start with the project
 
 ## 1) Node and NPM
 
@@ -54,8 +54,8 @@
 <img width="1400" alt="Screenshot 2023-09-12 at 07 11 53" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/2c253a03-63c8-4b97-8224-80f3d4b53ee8">
 
 
-# Please keep in mind that all data reated with price will bee automatically updated in one minute (if you will not update it by yourself).
+### P.S. Please keep in mind that all data reated with price will bee automatically updated in one minute (if you will not update it by yourself).
 
-# Pinned coins stores in localStorage, so, you can loose it if you will open app in new browser (it was a part of the task)
+### P.P.S. Pinned coins stores in localStorage, so, you can loose it if you will open app in new browser (it was a part of the task)
 
 Thank you very much :)
