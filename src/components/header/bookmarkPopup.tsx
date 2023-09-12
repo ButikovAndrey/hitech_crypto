@@ -12,6 +12,7 @@ export const BookmarkPopup = observer(() => {
   const { bookmarkStore } = useStore();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
+  const ITEM_HEIGHT = 48;
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
@@ -19,8 +20,16 @@ export const BookmarkPopup = observer(() => {
     setAnchorEl(null);
   };
 
+  const slotProps = {
+    paper: {
+      style: {
+        maxHeight: ITEM_HEIGHT * 4.5,
+        width: "20ch",
+      },
+    },
+  };
+
   if (!bookmarkStore.favouriteCoins.length) return null;
-  const ITEM_HEIGHT = 48;
   return (
     <div>
       <IconButton
@@ -42,15 +51,10 @@ export const BookmarkPopup = observer(() => {
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
-        PaperProps={{
-          style: {
-            maxHeight: ITEM_HEIGHT * 4.5,
-            width: "20ch",
-          },
-        }}
+        slotProps={slotProps}
       >
         {bookmarkStore.favouriteCoins.map((id) => (
-          <Link to={`/coins/${id}`}>
+          <Link key={id} to={`/coins/${id}`}>
             <MenuItem key={id} onClick={handleClose}>
               {id.toUpperCase()}
               <Bookmark id={id} className={styles.header__bookmark} />
