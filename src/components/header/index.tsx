@@ -41,7 +41,7 @@ export const Header = observer(() => {
               <Select
                 className={styles.header__select_currency}
                 variant="outlined"
-                defaultValue={currencyStore.selectedCurrency.label}
+                value={currencyStore.selectedCurrency.label}
                 onChange={onCurrencyChange}
               >
                 {Object.keys(currencyStore.currencyList).map((symbol) => {
