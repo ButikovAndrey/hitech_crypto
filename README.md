@@ -3,30 +3,42 @@
 ## 1) Node and NPM
 
    Make shure that you have installed Node and NPM on your computer.
-   To check Node verion open your Terminal and enter "node -v"
-   To check NPM verion enter "npm -v"
+	
+   To check Node verion open your Terminal and enter "node -v".
+	
+   To check NPM verion enter "npm -v".
+	
    <img width="302" alt="Screenshot 2023-09-12 at 06 39 22" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/4840493b-992f-49a4-863e-f4b2942e9971">
 
    In my dev process I've used Node v16.18.0 and NPM v9.6.7 (Project should run normaly on Node v15 / v17).
    <img width="302" alt="Screenshot 2023-09-12 at 06 34 44" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/0f8e49a3-8125-478d-8fb3-00c1b7eb351e">
 
-   You can download latest node version by following whis link - https://nodejs.org/en
-   This is a guide "how to install" for Mac OS and Windows - https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac
+   You can download latest node version by following whis link - https://nodejs.org/en.
+	
+   This is a guide "how to install" for Mac OS and Windows - https://radixweb.com/blog/installing-npm-and-nodejs-on-windows-and-mac.
+	
 
 ## 2) Install dependencies
 
     Ok, great after completion step 1 open project folder via terminal and enter "npm install" into command line to install all depencies.
+	 
     Press Enter and wait, it can takes time.
+	 
     <img width="1388" alt="Screenshot 2023-09-12 at 06 53 57" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/af464871-7a46-471d-8494-1d03153630f3">
 
 ## 3) Start the project
 
     Now we can run our project. 
+	 
     Enter in terminal "npm start" and wait untill "Compiled successfully!" message.
+	 
     <img width="1388" alt="Screenshot 2023-09-12 at 06 55 53" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/a2ec0083-1dcd-47f9-9de0-5b0b1db74f0e">
 
     
-    Browser should open automatycally. If you closed - just paste in browser url "http://localhost:3000/"
+    Browser should open automatycally.
+	 
+  If you closed - just paste in browser url "http://localhost:3000/"
+
     <img width="1388" alt="Screenshot 2023-09-12 at 06 57 51" src="https://github.com/ButikovAndrey/hitech_crypto/assets/109460557/ebb851ea-368a-4646-8ef3-9b680ddfaaa6">
 
     
